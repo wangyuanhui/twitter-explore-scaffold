@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: center;
+    div.panel {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin-top: 80px;
+        padding: 30px;
+        border: solid;
+        border-width: thin;
+        border-radius: 10px;
+        div.title {
+            margin-top: 5px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: larger;
+        }
+        div.input {
+            margin-top: 20px;
+            input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            a {
+                color: $primary-color;
+            }
+        }
+        div.buttons {
+            margin-top: 20px;
+            div#btn_login {
+                @include btn-variant($primary-color, $body-bg, $primary-color);
+                text-align: center;
+                margin-top: 0px;
+            }
+            div#btn_or {
+                text-align: center;
+                margin-top: 15px;
+            }
+            div#btn_register {
+                @include btn-variant(white, $primary-color, $primary-color);
+                text-align: center;
+                margin-top: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $common-padding-y $common-padding-x;
+    border-style: hidden hidden solid hidden;
+    border-width: thin;
+
+    nav {
+        > ul {
+            display: flex;
+            > li {
+                margin-right: 10px;
+                @include btn-variant($primary-color, $body-bg, $primary-color);
+                &:last-child {
+                    margin-right: 0;
+                    @include btn-variant(white, $primary-color, $primary-color);
+                }
+            }
+        }
+    }
+}
