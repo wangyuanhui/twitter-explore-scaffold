@@ -19,12 +19,29 @@
         }
         div.input {
             margin-top: 20px;
-            input {
-                width: 100%;
+            div.input-holder {
                 margin-bottom: 20px;
+                span {
+                    font-size: 14px;
+                }
+                input {
+                    width: 100%;
+                    background-color: $body-bg;
+                    border-top-width: 0px;
+                    border-right-width: 0px;
+                    border-bottom-width: thin;
+                    border-left-width: 0px;
+                    height: 30px;
+                    color: white;
+                    font-size: 15px;
+                }
+                input:focus {
+                    outline: none;
+                }
             }
             a {
                 color: $primary-color;
+                text-decoration: none;
             }
         }
         div.buttons {
